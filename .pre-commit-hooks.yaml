@@ -1,4 +1,4 @@
-- id: "check-license"
+- id: "check_year"
   name: "Test Hook"
   entry: check-year.sh
   types: [text]
