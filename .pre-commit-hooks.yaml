@@ -1,0 +1,7 @@
+- id: "check-license"
+  name: "Test Hook"
+  entry: check-year.sh
+  types: [text]
+  exclude: ".yaml$|.yml$"
+  language: "script"
+  description: "Check that the license in LICENSE is valid for the current year."
