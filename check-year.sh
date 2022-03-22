@@ -3,8 +3,10 @@
 # Modified some from https://damien.lespiau.name/posts/2013-01-13-a-git-pre-commit-hook-to-check-the-year-of-copyright-notices/
 #
 
+files=git diff --cached --name-only
+year=$(date +'%Y');
 
-function check_file() {
+function check_files() {
     files=$*
     for f in $files; do
         head -10 $f | grep -i copyright 2>&1 1>/dev/null || continue
@@ -14,9 +16,6 @@ function check_file() {
         fi
     done
 }
-
-files=git diff --cached --name-only
-year=date +&quot;%Y&quot;
 
 check_files $files
 check_files LICENSE
