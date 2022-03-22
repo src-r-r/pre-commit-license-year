@@ -1,3 +1,4 @@
+#!/bin/bash
 #
 # Check if copyright statements include the current year
 # Modified some from https://damien.lespiau.name/posts/2013-01-13-a-git-pre-commit-hook-to-check-the-year-of-copyright-notices/
