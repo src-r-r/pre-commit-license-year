@@ -1,6 +1,6 @@
 - id: "check_year"
   name: "Test Hook"
-  entry: check-year.sh
+  entry: bash check-year.sh
   types: [text]
   exclude: ".yaml$|.yml$"
   language: "script"
